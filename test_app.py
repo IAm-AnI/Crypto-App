@@ -73,7 +73,7 @@ def update_google_sheet():
         sheet.update(combined_data)
 
         header_range = "A1:J1"  
-        sheet.format(header_range, {"textFormat": {"bold": True, "foregroundColor": {"red": 0, "green": 0, "blue": 1}}})  # Blue text
+        sheet.format(header_range, {"textFormat": {"bold": True}})  
 
         print("Google Sheet updated successfully")
         return {"status": "success", "message": "Google Sheet updated successfully"}
